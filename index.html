@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Countdown Timer</title>
+        <style>
+            body{
+                text-align: center;
+                background-color: pink;
+                font-family:  Calibri;
+                font-weight: 100;
+            }
+            #container{
+                background-color: firebrick;
+                display: inline-block;
+                font-weight: 100;
+                text-align: center;
+                font-size: 40px;
+                margin-top: 180px;
+                padding: 40px;
+            } 
+            #container > div{
+                padding: 20px;
+                border-radius: 20px;
+                background-color: salmon;
+                display: inline-block;
+            }
+            #container div > span{
+                padding: 10px;
+                border-radius: 3px;
+                background-color: peachpuff;
+                display: inline-block;
+            }
+            .text{
+                padding-top: 5px;
+                font-size: 20px;
+                font-weight:bold;
+
+            }
+            h1{
+                text-align: center;
+                color:firebrick;
+                background-color: salmon;
+            }
+            h1:hover{
+                border-radius:20px;
+                color:blue;
+            }
+            #container:hover{
+                border-radius:20px;
+                color:blue;
+                font-weight:bold;
+                background-color: cadetblue;
+            }
+            #container:hover span{
+                border-radius:20px;
+                background-color: whitesmoke;
+            }
+
+            body:hover container{
+                background-color: wheat;
+            }
+
+        </style>
+
+    </head>
+    <body>
+            <h1>Countdown Timer</h1>
+        <div id="container">
+
+            <div>
+            <span class="days" id='day'></span>
+            <div class="text">Days</div>
+            </div>
+
+            <div>
+            <span class="hours" id='hour'></span>
+            <div class="text">Hours</div>
+            </div>
+
+            <div>
+            <span class="minutes" id='minute'></span>
+            <div class="text">Minutes</div>
+            </div>
+
+            <div>
+            <span class="seconds" id='second'></span>
+            <div class="text">Seconds</div>
+            </div>
+
+        </div>
+
+        <p id = "end"></p>
+        <script src="index.js"></script>
+        
+    </body>
+</html>
